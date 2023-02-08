@@ -17,11 +17,7 @@ resource "aws_elastic_beanstalk_environment" "beanstalkappenv" {
     name      = "VPCId"
     value     = var.vpc_id
   }
-  setting {
-    namespace = "aws:autoscaling:launchconfiguration"
-    name      = "IamInstanceProfile"
-    value     =  "aws-elasticbeanstalk-ec2-role"
-  }
+ 
   setting {
     namespace = "aws:ec2:vpc"
     name      = "AssociatePublicIpAddress"
