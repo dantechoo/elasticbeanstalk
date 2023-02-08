@@ -3,3 +3,7 @@ provider "aws" {
   secret_key = "66YJ33gphho2ZHNnNck2I66YlE8UKy9VW7qve7Vv"
   region     = "ap-southeast-1"
 }
+
+terraform {
+  backend "s3" {}
+}
