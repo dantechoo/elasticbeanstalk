@@ -1,5 +1,5 @@
 variable "elasticapp" {
-  default = "myapp11"
+  default = "myapp"
 }
 variable "beanstalkappenv" {
   default = "myenv"
